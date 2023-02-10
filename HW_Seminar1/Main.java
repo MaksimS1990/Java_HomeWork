@@ -16,13 +16,12 @@ package HW_Seminar1;
     
     int min = Short.MIN_VALUE;
     int max = Short.MAX_VALUE;
-    int result;
+    int result = 0;
 
     for (int i = a; i < max; i ++){
         if (i % n == 0);
-        result=+1;
-    System.out.println(result);
+        result++;
     }
-    
+    System.out.println(result);
     }
 }
