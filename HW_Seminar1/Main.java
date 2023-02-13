@@ -3,6 +3,7 @@ package HW_Seminar1;
     public class Main {
 
     public static void main(String[] args) {
+        
         int a = (int) (Math.random()* 100);
        
             System.out.println("Рандомное число: " + a);
