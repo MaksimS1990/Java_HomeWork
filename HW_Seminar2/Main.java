@@ -27,7 +27,7 @@ public class Main {
          }
         */
 
-        /* Scanner scanner1 = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
         System.out.print("Введите первую запись: ");
         StringBuilder first1 = new StringBuilder(scanner1.nextLine());
         System.out.println(first1);
@@ -42,9 +42,9 @@ public class Main {
         else {
                 System.out.println("Не совпадают!");
         }
-        */
+        
 
-        StringBuilder digit1 = new StringBuilder();
+        /* StringBuilder digit1 = new StringBuilder();
 
         StringBuilder digit2 = new StringBuilder();
 
@@ -62,7 +62,7 @@ public class Main {
 
         digit1.append(" = 59");
         System.out.println(digit1);
-        
+        */
 
 
         /* digit1.append("3");
@@ -105,9 +105,9 @@ public class Main {
         System.out.println(digit1);
         */
 
-        digit1.replace(7, 8, "равно");
+        /* digit1.replace(7, 8, "равно");
         System.out.println(digit1);
-        
+        */
 
         }
 }
