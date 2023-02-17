@@ -93,8 +93,6 @@ public class Main {
         list.retainAll(list2);
         System.out.println(list);
 
-        // *Сортировка списка.
-
     }
 
 }
