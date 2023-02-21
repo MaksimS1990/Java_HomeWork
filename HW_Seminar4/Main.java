@@ -30,6 +30,7 @@ public class Main {
         }
     }
     
+    
     for (String[] data: list){
             StringBuilder st = new StringBuilder();
             String [] temp = data [0].split(" ");
