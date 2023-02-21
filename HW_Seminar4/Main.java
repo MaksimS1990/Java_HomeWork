@@ -1,7 +1,7 @@
 package HW_Seminar4;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
     
@@ -9,8 +9,7 @@ public class Main {
 
     ArrayList<String[]> list = new ArrayList<>();
 
-    // Scanner scanner = new Scanner(System.in, "ibm866");
-    // System.out.println("ФИО возраст и пол (Выход: x): ");
+    Scanner scanner = new Scanner(System.in);
 
     BufferedReader br = new BufferedReader(new FileReader("users.txt"));
     String str;
@@ -19,23 +18,32 @@ public class Main {
     }
     br.close();
 
-    // boolean run = true;
-    // while (run){
-    // String in =  scanner.nextLine();
-    // if (in.equals("x")){
-    // run = false;
-    // }
-    // else {
-    //     String [] data = in.split(", ");
-    //     list.add(data);
+    boolean run  = true;
+    while(run) {
+        String in = scanner.nextLine();
+        if(in.equals("x")) {
+            run = false;
+        }
+        else {
+            String [] data = in.split(" ");
+            list.add(data);
+        }
+    }
     
-    
-
-    // for (String[] data: list){
-    //         StringBuilder str = new StringBuilder();
-    //         String [] temp = data [0].split(" ");
-    //         str.append(temp[0]).append(" ").append(temp[1].charAt(0)).append(". ").append(temp[2].charAt(0)).append(". ");
-    //         System.out.println(str);
+    for (String[] data: list){
+            StringBuilder st = new StringBuilder();
+            String [] temp = data [0].split(" ");
+            st.append(temp[0])
+                .append(" ")
+                .append(temp[1]
+                .charAt(0))
+                .append(". ")
+                .append(temp[2]
+                .charAt(0))
+                .append(". ");
+    System.out.println(data);
+    }
     }
 }
+
 
