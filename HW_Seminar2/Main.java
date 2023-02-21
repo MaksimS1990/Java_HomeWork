@@ -1,12 +1,8 @@
 package HW_Seminar2;
 
 import java.util.Scanner;
-import javax.sound.midi.SysexMessage;
-import java.util.Comparator;
 
 public class Main {
-    
-    private static String StringBuilder;
 
     public static void main(String[] args) {
 
@@ -27,20 +23,21 @@ public class Main {
          }
         */
 
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.print("Введите первую запись: ");
-        StringBuilder first1 = new StringBuilder(scanner1.nextLine());
-        System.out.println(first1);
+        try (Scanner scanner1 = new Scanner(System.in)) {
+            System.out.print("Введите первую запись: ");
+            StringBuilder first1 = new StringBuilder(scanner1.nextLine());
+            System.out.println(first1);
 
-        System.out.print("Введите вторую запись: ");
-        StringBuilder second2 = new StringBuilder(scanner1.nextLine());
-        System.out.println(second2.reverse());                            //можем разворачивать только одну строку
+            System.out.print("Введите вторую запись: ");
+            StringBuilder second2 = new StringBuilder(scanner1.nextLine());
+            System.out.println(second2.reverse());                            //можем разворачивать только одну строку
 
-        if (first1.toString().contains(second2.toString())) {
-            System.out.println("Совпадают!");
-        }
-        else {
-                System.out.println("Не совпадают!");
+            if (first1.toString().contains(second2.toString())) {
+                System.out.println("Совпадают!");
+            }
+            else {
+                    System.out.println("Не совпадают!");
+            }
         }
         
 
