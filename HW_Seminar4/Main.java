@@ -15,7 +15,7 @@ public class Main {
     BufferedReader br = new BufferedReader(new FileReader("users.txt"));
     String str;
     while((str = br.readLine()) != null){
-        System.out.printf("== %s ==\n", str);
+        System.out.printf("%s \n", str);
     }
     br.close();
 
