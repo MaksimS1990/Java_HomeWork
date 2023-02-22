@@ -39,7 +39,7 @@ public class Main {
     ArrayList <String> gender = new ArrayList<>();
 
     Scanner scanner = new Scanner(System.in, "cp866");
-    System.out.println("ФИО возраст пол, через пробел(Выход x): ");
+    System.out.println("Введите ФИО возраст пол, через пробел(Выход x): ");
 
     boolean run = true;
     while (run) {
@@ -67,25 +67,41 @@ public class Main {
             .append(". ")
             .append(patronymic.get(i)
             .charAt(0))
-            .append(". ");
-        System.out.println(st);
-    }
-
-    BubbleSortAge(age, index);
-
-    System.out.println("Вывод отсортированного списка: ");
-    for(int i: index) {
-        StringBuilder st = new StringBuilder();
-         st.append(lastname.get(i))
-            .append(" ")
-            .append(firstname.get(i)
-            .charAt(0))
             .append(". ")
-            .append(patronymic.get(i)
-            .charAt(0))
-            .append(". ");
+            .append(age.get(i))
+            .append(" ")
+            .append(gender.get(i));
         System.out.println(st);
     }
 
-}
+
+    while (true){
+        System.out.println("Для вывода отсортированного списка введите sort (z - выход): ");
+        String input = scanner.nextLine();
+        if (input.equals("sort")){
+        BubbleSortAge(age, index);
+
+        System.out.println("Вывод отсортированного списка: ");
+        for(int i: index) {
+            StringBuilder st = new StringBuilder();
+            st.append(lastname.get(i))
+                .append(" ")
+                .append(firstname.get(i)
+                .charAt(0))
+                .append(". ")
+                .append(patronymic.get(i)
+                .charAt(0))
+                .append(". ")
+                .append(age.get(i))
+                .append(" ")
+                .append(gender.get(i));
+            System.out.println(st);
+            }
+        }else if
+        (input.equals("z")){
+            break;
+        }
+
+        }
+    }
 }
