@@ -17,7 +17,7 @@ public class Main {
         cars.put(5, "mercedes");
         System.out.println("Ваш список брендов автомобилей: ");
         System.out.println(cars.values());
-        System.out.println();
+        System.out.println("-".repeat(100));
         
         for (Integer item: cars.keySet()){
             cars.compute(item, (k, v) -> v + "!");
@@ -25,7 +25,7 @@ public class Main {
         
         System.out.println("Ваш изменённый список: ");
         System.out.println(cars.values());
-        System.out.println();
+        System.out.println("-".repeat(100));
 
 
         HashMap<Integer, String> city = new HashMap<>();
@@ -39,7 +39,7 @@ public class Main {
         city.put(10, "Saratov");
         System.out.println("Ваш список городов: ");
         System.out.println(city.values());
-        System.out.println();
+        System.out.println("-".repeat(100));
 
 
         for (Integer item: city.keySet()){
@@ -47,6 +47,7 @@ public class Main {
         }
         System.out.println("Объединённый список: ");
         System.out.println(city.values());
+        System.out.println("-".repeat(100));
         System.out.println("Объединённый список с ключами: ");
         System.out.println(city);
 
