@@ -43,10 +43,12 @@ public class Main {
 
 
         for (Integer item: city.keySet()){
-            city.merge(item, cars.getOrDefault(item, "?"), (v1 , v2) -> v2 + "/" + v1);
+            city.merge(item, cars.getOrDefault(item, "?"), (v1 , v2) -> v2 + " " + v1);
         }
         System.out.println("Объединённый список: ");
         System.out.println(city.values());
+        System.out.println("Объединённый список с ключами: ");
+        System.out.println(city);
 
     }
 }
