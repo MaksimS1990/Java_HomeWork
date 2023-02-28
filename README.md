@@ -3,3 +3,4 @@
 # Java_HomeWork - Seminar_3
 # Java_HomeWork - Seminar_4
 # Java_HomeWork - Seminar_5
+# Java_HomeWork - Seminar_6
