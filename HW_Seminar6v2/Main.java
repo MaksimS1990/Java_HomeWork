@@ -17,9 +17,12 @@ public class Main {
         set.add(67);
         set.add(28);
         set.add(77);
+        System.out.println("Вывод MySet после заполнения: ");
         System.out.println(set);
+        System.out.println("Проверка на анличие элемента в MySet: ");
         System.out.println(set.contains(33));
         System.out.println(set.contains(59));
+        System.out.println("Очистка MySet: ");
         set.clear();
         System.out.println(set);
         set.add(2);
@@ -29,14 +32,22 @@ public class Main {
         set.add(6);
         set.add(28);
         set.add(16);
+        System.out.println("Вывод MySet после повторного запонения: ");
         System.out.println(set);
         set.remove(41);
+        System.out.println("Вывод MySet после удаления элемента: ");
         System.out.println(set);
+        System.out.println("Вывод размера MySet: ");
         System.out.println(set.size());
+        System.out.println("Получение элемента: ");
         System.out.println(set.get(2));
+        System.out.println("Получение списка: ");
         System.out.println(set.getArrayList());
+        System.out.println("Вывод элементов от начала до заданного: ");
         System.out.println(set.headSet(22));
+        System.out.println("Вывод элементов от заданного до конца: ");
         System.out.println(set.tailSet(22));
+        System.out.println("Вывод элементов в диапазоне от первого заданного до второго: ");
         System.out.println(set.subSet(2, 6));
 
     }
