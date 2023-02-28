@@ -19,7 +19,7 @@ public class Main {
         set.add(77);
         System.out.println("Вывод MySet после заполнения: ");
         System.out.println(set);
-        System.out.println("Проверка на анличие элемента в MySet: ");
+        System.out.println("Проверка на нанличие элемента в MySet: ");
         System.out.println(set.contains(33));
         System.out.println(set.contains(59));
         System.out.println("Очистка MySet: ");
